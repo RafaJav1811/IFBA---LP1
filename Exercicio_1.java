@@ -19,7 +19,7 @@ public class Exercicio_1
         prova1 = entrada.nextFloat();
         prova2 = entrada.nextFloat();
         prova3 = entrada.nextFloat();
-        
+         
         media = (prova1+prova2+prova3)/3;
         
         System.out.println("A média das notas obtidas acima foi de "+media);
