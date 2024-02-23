@@ -1,65 +1,21 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
  */
+package exercicio._4;
 
-package com.mycompany.exercicio_4;
+/**
+ *
+ * @author aluno
+ */
+public class Exercicio_4 {
 
-import java.util.Scanner;
-        
-public class Exercicio_4 
-{
-    public static void main(String[] args) 
-    {
-        int x,digitos = 0;
-        
-        Scanner entrada = new Scanner(System.in);
-        
-        System.out.println("Digite um número inteiro maior ou igual a zero");
-        
-        x = entrada.nextInt();
-        
-        if(x>=0)
-        {
-        digitos=digitos+1;
-            if(x>=10)
-            {
-            digitos=digitos+1;   
-            if(x>=100)
-            {
-                digitos=digitos+1;
-                if(x>=1000)
-                {
-                    digitos=digitos+1;
-                    if(x>=10000)
-                    {
-                        digitos=digitos+1;
-                        if(x>=100000)
-                        {
-                            digitos=digitos+1;
-                            if(x>=1000000)
-                                digitos=digitos+1;
-                                if(x>10000000)
-                                {
-                                    digitos=digitos+1;
-                                            if(x>=100000000)
-                                            {
-                                             digitos=digitos+1;   
-                                            }
-                                                
-                                            
-                                }
-                                        
-                        }
-                    }
-                }
-            }
-            }    
-        }
-            
-        else
-        {
-            System.out.println("O valor inserido não cumpri com os requisitos citados");
-        }
-        System.out.println("A quantidade de digitos do número "+x+" é "+digitos);
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
     }
+    
 }
