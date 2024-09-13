@@ -1,0 +1,36 @@
+package com.mycompany.consulta_numerica1;
+
+import java.util.Scanner;
+
+public class Consulta_numerica1 
+{
+
+    public static void main(String[] args) 
+    {
+        Scanner teclado = new Scanner(System.in);
+        
+        System.out.print("Quantas pessoas deseja cadastrar? ");
+        int quantidade = teclado.nextInt();
+        teclado.nextLine(); 
+        
+        String nomes[] = new String[quantidade];
+        
+        for (int i = 0; i < quantidade; i++) 
+        {
+            System.out.print("Digite o nome da pessoa " + (i + 1) + ": ");
+            nomes[i] = teclado.nextLine();
+        }
+        
+        System.out.print("\nDigite o número da posição do nome que deseja consultar: ");
+        int posicao = teclado.nextInt();
+        
+        if (posicao < 1 || posicao > quantidade) 
+        {
+            System.out.println("Consulta inválida! O número deve estar entre 1 e " + quantidade);
+        } 
+        else 
+        {
+            System.out.println("O nome na posição " + posicao + " é: " + nomes[posicao - 1]);
+        }
+    }
+}
